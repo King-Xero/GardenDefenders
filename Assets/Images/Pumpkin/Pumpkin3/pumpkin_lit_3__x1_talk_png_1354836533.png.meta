@@ -1,0 +1,1200 @@
+fileFormatVersion: 2
+guid: 52d2263f895fd473699139d438c61c9b
+timeCreated: 1508308831
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: pumpkin_lit_3__x1_talk_png_1354836533_0
+    21300002: pumpkin_lit_3__x1_talk_png_1354836533_1
+    21300004: pumpkin_lit_3__x1_talk_png_1354836533_2
+    21300006: pumpkin_lit_3__x1_talk_png_1354836533_3
+    21300008: pumpkin_lit_3__x1_talk_png_1354836533_4
+    21300010: pumpkin_lit_3__x1_talk_png_1354836533_5
+    21300012: pumpkin_lit_3__x1_talk_png_1354836533_6
+    21300014: pumpkin_lit_3__x1_talk_png_1354836533_7
+    21300016: pumpkin_lit_3__x1_talk_png_1354836533_8
+    21300018: pumpkin_lit_3__x1_talk_png_1354836533_9
+    21300020: pumpkin_lit_3__x1_talk_png_1354836533_10
+    21300022: pumpkin_lit_3__x1_talk_png_1354836533_11
+    21300024: pumpkin_lit_3__x1_talk_png_1354836533_12
+    21300026: pumpkin_lit_3__x1_talk_png_1354836533_13
+    21300028: pumpkin_lit_3__x1_talk_png_1354836533_14
+    21300030: pumpkin_lit_3__x1_talk_png_1354836533_15
+    21300032: pumpkin_lit_3__x1_talk_png_1354836533_16
+    21300034: pumpkin_lit_3__x1_talk_png_1354836533_17
+    21300036: pumpkin_lit_3__x1_talk_png_1354836533_18
+    21300038: pumpkin_lit_3__x1_talk_png_1354836533_19
+    21300040: pumpkin_lit_3__x1_talk_png_1354836533_20
+    21300042: pumpkin_lit_3__x1_talk_png_1354836533_21
+    21300044: pumpkin_lit_3__x1_talk_png_1354836533_22
+    21300046: pumpkin_lit_3__x1_talk_png_1354836533_23
+    21300048: pumpkin_lit_3__x1_talk_png_1354836533_24
+    21300050: pumpkin_lit_3__x1_talk_png_1354836533_25
+    21300052: pumpkin_lit_3__x1_talk_png_1354836533_26
+    21300054: pumpkin_lit_3__x1_talk_png_1354836533_27
+    21300056: pumpkin_lit_3__x1_talk_png_1354836533_28
+    21300058: pumpkin_lit_3__x1_talk_png_1354836533_29
+    21300060: pumpkin_lit_3__x1_talk_png_1354836533_30
+    21300062: pumpkin_lit_3__x1_talk_png_1354836533_31
+    21300064: pumpkin_lit_3__x1_talk_png_1354836533_32
+    21300066: pumpkin_lit_3__x1_talk_png_1354836533_33
+    21300068: pumpkin_lit_3__x1_talk_png_1354836533_34
+    21300070: pumpkin_lit_3__x1_talk_png_1354836533_35
+    21300072: pumpkin_lit_3__x1_talk_png_1354836533_36
+    21300074: pumpkin_lit_3__x1_talk_png_1354836533_37
+    21300076: pumpkin_lit_3__x1_talk_png_1354836533_38
+    21300078: pumpkin_lit_3__x1_talk_png_1354836533_39
+    21300080: pumpkin_lit_3__x1_talk_png_1354836533_40
+    21300082: pumpkin_lit_3__x1_talk_png_1354836533_41
+    21300084: pumpkin_lit_3__x1_talk_png_1354836533_42
+    21300086: pumpkin_lit_3__x1_talk_png_1354836533_43
+    21300088: pumpkin_lit_3__x1_talk_png_1354836533_44
+    21300090: pumpkin_lit_3__x1_talk_png_1354836533_45
+    21300092: pumpkin_lit_3__x1_talk_png_1354836533_46
+    21300094: pumpkin_lit_3__x1_talk_png_1354836533_47
+    21300096: pumpkin_lit_3__x1_talk_png_1354836533_48
+    21300098: pumpkin_lit_3__x1_talk_png_1354836533_49
+    21300100: pumpkin_lit_3__x1_talk_png_1354836533_50
+    21300102: pumpkin_lit_3__x1_talk_png_1354836533_51
+    21300104: pumpkin_lit_3__x1_talk_png_1354836533_52
+    21300106: pumpkin_lit_3__x1_talk_png_1354836533_53
+    21300108: pumpkin_lit_3__x1_talk_png_1354836533_54
+    21300110: pumpkin_lit_3__x1_talk_png_1354836533_55
+    21300112: pumpkin_lit_3__x1_talk_png_1354836533_56
+    21300114: pumpkin_lit_3__x1_talk_png_1354836533_57
+    21300116: pumpkin_lit_3__x1_talk_png_1354836533_58
+    21300118: pumpkin_lit_3__x1_talk_png_1354836533_59
+    21300120: pumpkin_lit_3__x1_talk_png_1354836533_60
+    21300122: pumpkin_lit_3__x1_talk_png_1354836533_61
+    21300124: pumpkin_lit_3__x1_talk_png_1354836533_62
+    21300126: pumpkin_lit_3__x1_talk_png_1354836533_63
+    21300128: pumpkin_lit_3__x1_talk_png_1354836533_64
+    21300130: pumpkin_lit_3__x1_talk_png_1354836533_65
+    21300132: pumpkin_lit_3__x1_talk_png_1354836533_66
+    21300134: pumpkin_lit_3__x1_talk_png_1354836533_67
+    21300136: pumpkin_lit_3__x1_talk_png_1354836533_68
+    21300138: pumpkin_lit_3__x1_talk_png_1354836533_69
+    21300140: pumpkin_lit_3__x1_talk_png_1354836533_70
+    21300142: pumpkin_lit_3__x1_talk_png_1354836533_71
+    21300144: pumpkin_lit_3__x1_talk_png_1354836533_72
+    21300146: pumpkin_lit_3__x1_talk_png_1354836533_73
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 133.33
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 141
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 141
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 141
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_3
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 141
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 141
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_5
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 141
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_6
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 141
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_7
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 141
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_8
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 141
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_9
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 141
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_10
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 141
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_11
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 141
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_12
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 141
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_13
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 141
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_14
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 141
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_15
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 141
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_16
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 141
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_17
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 141
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_18
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 141
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 94
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_20
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 94
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_21
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 94
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_22
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 94
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_23
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 94
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_24
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 94
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_25
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 94
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_26
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 94
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_27
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 94
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_28
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 94
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_29
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 94
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_30
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 94
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_31
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 94
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_32
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 94
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_33
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 94
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_34
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 94
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_35
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 94
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_36
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 94
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_37
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 94
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 47
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_39
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 47
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_40
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 47
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_41
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 47
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_42
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 47
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_43
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 47
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_44
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 47
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_45
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 47
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_46
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 47
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_47
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 47
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_48
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 47
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_49
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 47
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_50
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 47
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_51
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 47
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_52
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 47
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_53
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 47
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_54
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 47
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_55
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 47
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_56
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 47
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_57
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_58
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 0
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_59
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_60
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_61
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_62
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 0
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_63
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_64
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 0
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_65
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_66
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 0
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_67
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_68
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 0
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_69
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_70
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 0
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_71
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_72
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 0
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: pumpkin_lit_3__x1_talk_png_1354836533_73
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,930 @@
+fileFormatVersion: 2
+guid: 2ed286bf204634b5fb496e85056a1f15
+timeCreated: 1508844607
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: magic_rock_book_orangeBook_x1_idle2_png_1354839775_0
+    21300002: magic_rock_book_orangeBook_x1_idle2_png_1354839775_1
+    21300004: magic_rock_book_orangeBook_x1_idle2_png_1354839775_2
+    21300006: magic_rock_book_orangeBook_x1_idle2_png_1354839775_3
+    21300008: magic_rock_book_orangeBook_x1_idle2_png_1354839775_4
+    21300010: magic_rock_book_orangeBook_x1_idle2_png_1354839775_5
+    21300012: magic_rock_book_orangeBook_x1_idle2_png_1354839775_6
+    21300014: magic_rock_book_orangeBook_x1_idle2_png_1354839775_7
+    21300016: magic_rock_book_orangeBook_x1_idle2_png_1354839775_8
+    21300018: magic_rock_book_orangeBook_x1_idle2_png_1354839775_9
+    21300020: magic_rock_book_orangeBook_x1_idle2_png_1354839775_10
+    21300022: magic_rock_book_orangeBook_x1_idle2_png_1354839775_11
+    21300024: magic_rock_book_orangeBook_x1_idle2_png_1354839775_12
+    21300026: magic_rock_book_orangeBook_x1_idle2_png_1354839775_13
+    21300028: magic_rock_book_orangeBook_x1_idle2_png_1354839775_14
+    21300030: magic_rock_book_orangeBook_x1_idle2_png_1354839775_15
+    21300032: magic_rock_book_orangeBook_x1_idle2_png_1354839775_16
+    21300034: magic_rock_book_orangeBook_x1_idle2_png_1354839775_17
+    21300036: magic_rock_book_orangeBook_x1_idle2_png_1354839775_18
+    21300038: magic_rock_book_orangeBook_x1_idle2_png_1354839775_19
+    21300040: magic_rock_book_orangeBook_x1_idle2_png_1354839775_20
+    21300042: magic_rock_book_orangeBook_x1_idle2_png_1354839775_21
+    21300044: magic_rock_book_orangeBook_x1_idle2_png_1354839775_22
+    21300046: magic_rock_book_orangeBook_x1_idle2_png_1354839775_23
+    21300048: magic_rock_book_orangeBook_x1_idle2_png_1354839775_24
+    21300050: magic_rock_book_orangeBook_x1_idle2_png_1354839775_25
+    21300052: magic_rock_book_orangeBook_x1_idle2_png_1354839775_26
+    21300054: magic_rock_book_orangeBook_x1_idle2_png_1354839775_27
+    21300056: magic_rock_book_orangeBook_x1_idle2_png_1354839775_28
+    21300058: magic_rock_book_orangeBook_x1_idle2_png_1354839775_29
+    21300060: magic_rock_book_orangeBook_x1_idle2_png_1354839775_30
+    21300062: magic_rock_book_orangeBook_x1_idle2_png_1354839775_31
+    21300064: magic_rock_book_orangeBook_x1_idle2_png_1354839775_32
+    21300066: magic_rock_book_orangeBook_x1_idle2_png_1354839775_33
+    21300068: magic_rock_book_orangeBook_x1_idle2_png_1354839775_34
+    21300070: magic_rock_book_orangeBook_x1_idle2_png_1354839775_35
+    21300072: magic_rock_book_orangeBook_x1_idle2_png_1354839775_36
+    21300074: magic_rock_book_orangeBook_x1_idle2_png_1354839775_37
+    21300076: magic_rock_book_orangeBook_x1_idle2_png_1354839775_38
+    21300078: magic_rock_book_orangeBook_x1_idle2_png_1354839775_39
+    21300080: magic_rock_book_orangeBook_x1_idle2_png_1354839775_40
+    21300082: magic_rock_book_orangeBook_x1_idle2_png_1354839775_41
+    21300084: magic_rock_book_orangeBook_x1_idle2_png_1354839775_42
+    21300086: magic_rock_book_orangeBook_x1_idle2_png_1354839775_43
+    21300088: magic_rock_book_orangeBook_x1_idle2_png_1354839775_44
+    21300090: magic_rock_book_orangeBook_x1_idle2_png_1354839775_45
+    21300092: magic_rock_book_orangeBook_x1_idle2_png_1354839775_46
+    21300094: magic_rock_book_orangeBook_x1_idle2_png_1354839775_47
+    21300096: magic_rock_book_orangeBook_x1_idle2_png_1354839775_48
+    21300098: magic_rock_book_orangeBook_x1_idle2_png_1354839775_49
+    21300100: magic_rock_book_orangeBook_x1_idle2_png_1354839775_50
+    21300102: magic_rock_book_orangeBook_x1_idle2_png_1354839775_51
+    21300104: magic_rock_book_orangeBook_x1_idle2_png_1354839775_52
+    21300106: magic_rock_book_orangeBook_x1_idle2_png_1354839775_53
+    21300108: magic_rock_book_orangeBook_x1_idle2_png_1354839775_54
+    21300110: magic_rock_book_orangeBook_x1_idle2_png_1354839775_55
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 133
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1392
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_1
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 1392
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_2
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1392
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_3
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 1392
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_4
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1392
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_5
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 1392
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_6
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1392
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_7
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 1392
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_8
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1392
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_9
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 1392
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_10
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1392
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_11
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 1392
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1044
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_13
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 1044
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_14
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1044
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_15
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 1044
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_16
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1044
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_17
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 1044
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_18
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1044
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_19
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 1044
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_20
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1044
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_21
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 1044
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_22
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1044
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_23
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 1044
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 696
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_25
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 696
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_26
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 696
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_27
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 696
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_28
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 696
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_29
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 696
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_30
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 696
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_31
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 696
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_32
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 696
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_33
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 696
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_34
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 696
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_35
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 696
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 348
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_37
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 348
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_38
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 348
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_39
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 348
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_40
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 348
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_41
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 348
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_42
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 348
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_43
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 348
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_44
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 348
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_45
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 348
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_46
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 348
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_47
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 348
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_49
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 0
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_50
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_51
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 0
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_52
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_53
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 0
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_54
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 0
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: magic_rock_book_orangeBook_x1_idle2_png_1354839775_55
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 0
+        width: 75
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
