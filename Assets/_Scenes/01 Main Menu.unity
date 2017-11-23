@@ -195,7 +195,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &251045725
 GameObject:
@@ -373,7 +373,7 @@ RectTransform:
   - {fileID: 956233904}
   - {fileID: 251045726}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -496,6 +496,23 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: be505e406fe8945019d2c863b36840ad, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1027756800 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1032225224867250, guid: be505e406fe8945019d2c863b36840ad,
+    type: 2}
+  m_PrefabInternal: {fileID: 1027756799}
+--- !u!114 &1027756801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1027756800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6b2df9bf08104242b65befa947e2866, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: play
 --- !u!1 &1276905794
 GameObject:
   m_ObjectHideFlags: 0
@@ -541,6 +558,47 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224427691423506892, guid: be505e406fe8945019d2c863b36840ad,
     type: 2}
   m_PrefabInternal: {fileID: 1027756799}
+--- !u!1 &1757226564
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1757226566}
+  - component: {fileID: 1757226565}
+  m_Layer: 0
+  m_Name: LocalizationManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1757226565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1757226564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11169fd90b9374d899d45bfce637652a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DefaultLanguageFile: EN_GB_Lang.gxg
+--- !u!4 &1757226566
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1757226564}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1797643367
 Prefab:
   m_ObjectHideFlags: 0
@@ -873,5 +931,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

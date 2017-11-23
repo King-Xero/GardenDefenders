@@ -5,8 +5,26 @@ using UnityEngine;
 
 public class LocalizationManager : MonoBehaviour {
 
-    private const string MISSING_STRING_TEXT = "No localization found"
+    public static LocalizationManager Instance;
+
+    public string DefaultLanguageFile;
+
+    private const string MISSING_STRING_TEXT = "No localization found";
     private Dictionary<string, string> localizedTextDictionary;
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else if (Instance != this)
+        {
+            Destroy(gameObject);
+        }
+
+        LoadLocalizedText(DefaultLanguageFile);
+    }
 
 	public void LoadLocalizedText(string filename)
     {
