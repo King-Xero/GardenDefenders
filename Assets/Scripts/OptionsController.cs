@@ -24,8 +24,14 @@ public class OptionsController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        musicManager.SetVolume(MusicVolumerSlider.value);
-        sfxManager.SetVolume(SfxVolumeSlider.value);
+        if (musicManager)
+        {
+            musicManager.SetVolume(MusicVolumerSlider.value);
+        }
+        if (sfxManager)
+        {
+            sfxManager.SetVolume(SfxVolumeSlider.value);
+        }
     }
 
     public void ShowOptionsMenu()

@@ -39,19 +39,21 @@ public class PumpkinDefender : MonoBehaviour {
 
     private bool IsAttackerInSight()
     {
-        if (laneSpawner)
+        if (laneSpawner && laneSpawner.AttackerPools != null)
         {
-            if (laneSpawner.transform.childCount > 0)
+            return laneSpawner.AttackerPools.Any(attackerPool =>
             {
-                foreach (Transform attacker in laneSpawner.transform)
+                foreach (Transform attacker in attackerPool.transform)
                 {
-                    if (attacker.position.x <= transform.position.x + ForwardVisibilityDistance &&
-                        attacker.position.x >= transform.position.x - BackwardVisibilityDistance)
+                    if (attacker.gameObject.activeInHierarchy && attacker.transform.position.y == transform.position.y &&
+                        attacker.position.x <= transform.position.x + ForwardVisibilityDistance
+                        && attacker.position.x >= transform.position.x - BackwardVisibilityDistance)
                     {
                         return true;
                     }
                 }
-            }
+                return false;
+            });
         }
         return false;
     }
@@ -87,7 +89,8 @@ public class PumpkinDefender : MonoBehaviour {
         {
             foreach (var attacker in currentTargets)
             {
-                Destroy(attacker.gameObject);
+                //Destroy(attacker.gameObject);
+                attacker.gameObject.SetActive(false);
             }
         }
     }

@@ -48,18 +48,19 @@ public class Shooter : MonoBehaviour
 
     private bool IsAttackerInSight()
     {
-        if (laneSpawner)
+        if (laneSpawner && laneSpawner.AttackerPools != null)
         {
-            if (laneSpawner.transform.childCount > 0)
+            return laneSpawner.AttackerPools.Any(attackerPool =>
             {
-                foreach (Transform attacker in laneSpawner.transform)
+                foreach (Transform attacker in attackerPool.transform)
                 {
-                    if (attacker.position.x > transform.position.x)
+                    if (attacker.gameObject.activeInHierarchy && attacker.transform.position.y == transform.position.y)
                     {
                         return true;
                     }
                 }
-            }
+                return false;
+            });
         }
         return false;
     }

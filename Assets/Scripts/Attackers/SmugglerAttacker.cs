@@ -18,7 +18,8 @@ public class SmugglerAttacker : MonoBehaviour
     {
         if (!CheckLaneForDefenders())
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
+            gameObject.SetActive(false);
         }
         else
         {
@@ -47,11 +48,12 @@ public class SmugglerAttacker : MonoBehaviour
 
     private void SetBoxPosition()
     {
-        foreach (GameObject child in transform)
+        foreach (var child in transform)
         {
-            if (child.tag == BOXTAG)
+            var childObject = child as GameObject;
+            if (childObject.tag == BOXTAG)
             {
-                smugglerBoxPosition = child.transform.position;
+                smugglerBoxPosition = childObject.transform.position;
                 return;
             }
         }
@@ -71,12 +73,14 @@ public class SmugglerAttacker : MonoBehaviour
 
     private void DestroyTarget()
     {
-        Destroy(captureTarget.gameObject);
+        //Destroy(captureTarget.gameObject);
+        captureTarget.gameObject.SetActive(false);
     }
 
     private void Leave()
     {
-        Destroy(gameObject);
+        //Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 
     void FixedUpdate()

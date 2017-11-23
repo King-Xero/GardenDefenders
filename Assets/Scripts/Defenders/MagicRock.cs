@@ -16,7 +16,7 @@ public class MagicRock : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (!currentTarget)
+        if (!currentTarget || !currentTarget.activeInHierarchy)
         {
             anim.SetBool("isAttacked", false);
         }

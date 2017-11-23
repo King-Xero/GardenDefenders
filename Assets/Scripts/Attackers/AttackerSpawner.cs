@@ -7,11 +7,13 @@ public class AttackerSpawner : MonoBehaviour
     private const int NUMBEROFLANES = 5;
 
     public float SpawnDelay;
-    public GameObject[] AttackerPrefabs;
+    //public GameObject[] AttackerPrefabs;
+    public GameObject[] AttackerPools;
 
     // Use this for initialization
     void Start()
     {
+        
     }
 
     // Update is called once per frame
@@ -19,17 +21,27 @@ public class AttackerSpawner : MonoBehaviour
     {
         if (Time.timeSinceLevelLoad >= SpawnDelay)
         {
-            foreach (GameObject attackerPrefab in AttackerPrefabs)
+            //foreach (GameObject attackerPrefab in AttackerPrefabs)
+            //{
+            //    if (IsTimeToSpawn(attackerPrefab))
+            //    {
+            //        Spawn(attackerPrefab);
+            //    }
+            //}
+
+            foreach (var pool in AttackerPools)
             {
-                if (isTimeToSpawn(attackerPrefab))
+                ObjectPooler attackerPool = pool.GetComponent<ObjectPooler>();
+                var pooledObject = attackerPool.PoolObjectType;
+                if (IsTimeToSpawn(pooledObject))
                 {
-                    Spawn(attackerPrefab);
+                    Spawn(attackerPool.GetPooledObject());
                 }
             }
         }
     }
 
-    private bool isTimeToSpawn(GameObject attackerPrefab)
+    private bool IsTimeToSpawn(GameObject attackerPrefab)
     {
         Attacker attacker = attackerPrefab.GetComponent<Attacker>();
 
@@ -51,8 +63,11 @@ public class AttackerSpawner : MonoBehaviour
         return Random.value < spawnThreshold;
     }
 
-    private void Spawn(GameObject attackerPrefab)
+    private void Spawn(GameObject attacker)
     {
-        Instantiate(attackerPrefab, transform.position, Quaternion.identity, transform);
+        //Instantiate(attacker, transform.position, Quaternion.identity, transform);
+
+        attacker.transform.position = transform.position;
+        attacker.SetActive(true);
     }
 }

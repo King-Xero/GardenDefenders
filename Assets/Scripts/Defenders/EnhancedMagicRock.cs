@@ -35,18 +35,20 @@ public class EnhancedMagicRock : MonoBehaviour {
 
     private bool IsAttackerInSight()
     {
-        if (laneSpawner)
+        if (laneSpawner && laneSpawner.AttackerPools != null)
         {
-            if (laneSpawner.transform.childCount > 0)
+            return laneSpawner.AttackerPools.Any(attackerPool =>
             {
-                foreach (Transform attacker in laneSpawner.transform)
+                foreach (Transform attacker in attackerPool.transform)
                 {
-                    if (attacker.position.x <= transform.position.x + ForwardVisibilityDistance)
+                    if (attacker.gameObject.activeInHierarchy && attacker.transform.position.y == transform.position.y &&
+                        attacker.position.x >= transform.position.x && attacker.position.x <= transform.position.x + ForwardVisibilityDistance)
                     {
                         return true;
                     }
                 }
-            }
+                return false;
+            });
         }
         return false;
     }

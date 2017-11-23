@@ -23,7 +23,7 @@ public class Attacker : MonoBehaviour {
 	void Update () {
         transform.Translate(Vector3.left * movementSpeed * Time.deltaTime);
 
-	    if (!currentTarget)
+        if (!currentTarget || !currentTarget.activeInHierarchy)
 	    {
 	        animator.SetBool("isAttacking", false);
         }

@@ -8,9 +8,12 @@ public class Health : MonoBehaviour
     [Range(0, 200)] public float HealthPoints;
     public EventHandler OnHealthDecreased = (sender, e) => { };
 
+    private float hp;
+
     // Use this for initialization
     void Start()
     {
+        hp = HealthPoints;
     }
 
     // Update is called once per frame
@@ -20,9 +23,9 @@ public class Health : MonoBehaviour
 
     public void InflictDamage(float damage)
     {
-        HealthPoints -= damage;
+        hp -= damage;
         OnHealthDecreased.Invoke(this, EventArgs.Empty);
-        if (HealthPoints <= 0)
+        if (hp <= 0)
         {
             //Death animation can go here
             DestroyObject();
@@ -31,6 +34,8 @@ public class Health : MonoBehaviour
 
     public void DestroyObject()
     {
-        Destroy(gameObject);
+        //Destroy(gameObject);
+        gameObject.SetActive(false);
+        hp = HealthPoints;
     }
 }

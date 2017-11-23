@@ -12,7 +12,6 @@ public class CraftyBotDefender : MonoBehaviour {
 
     private Animator animator;
     private AttackerSpawner laneSpawner;
-    private GameObject currentTarget;
     private float movementSpeed;
 
     // Use this for initialization
@@ -67,46 +66,34 @@ public class CraftyBotDefender : MonoBehaviour {
 
         Attack(colliderGameObject);
 
-        Destroy(colliderGameObject);
+        //Destroy(colliderGameObject);
+        colliderGameObject.SetActive(false);
 
         Debug.Log("Walking attacker collided with " + col);
     }
 
     private bool AttackerInRange(float range)
     {
-        if (laneSpawner)
+        if (laneSpawner && laneSpawner.AttackerPools != null)
         {
-            if (laneSpawner.transform.childCount > 0)
+            return laneSpawner.AttackerPools.Any(attackerPool =>
             {
-                foreach (Transform attacker in laneSpawner.transform)
+                foreach (Transform attacker in attackerPool.transform)
                 {
-                    if (attacker.position.x >= transform.position.x && attacker.position.x <= range)
+                    if (attacker.gameObject.activeInHierarchy && attacker.transform.position.y == transform.position.y &&
+                        attacker.position.x >= transform.position.x && attacker.position.x <= range)
                     {
                         return true;
                     }
                 }
-            }
+                return false;
+            });
         }
         return false;
     }
 
     private void Attack(GameObject colliderGameObject)
     {
-        currentTarget = colliderGameObject;
-
         animator.SetBool("isAttacking", true);
-    }
-
-    public void AttackCurrenttarget(float damage)
-    {
-        Debug.Log("Dealing " + damage + " damage to the current target");
-        if (currentTarget)
-        {
-            Health currentTargetHealth = currentTarget.GetComponent<Health>();
-            if (currentTargetHealth)
-            {
-                currentTargetHealth.InflictDamage(damage);
-            }
-        }
     }
 }

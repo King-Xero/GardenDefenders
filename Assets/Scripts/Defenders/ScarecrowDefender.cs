@@ -23,7 +23,7 @@ public class ScarecrowDefender : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (!currentTarget)
+        if (!currentTarget || !currentTarget.activeInHierarchy)
         {
             animator.SetBool("isAttacking", false);
         }
@@ -52,18 +52,20 @@ public class ScarecrowDefender : MonoBehaviour {
 
     private bool IsAttackerInSight()
     {
-        if (laneSpawner)
+        if (laneSpawner && laneSpawner.AttackerPools != null)
         {
-            if (laneSpawner.transform.childCount > 0)
+            return laneSpawner.AttackerPools.Any(attackerPool =>
             {
-                foreach (Transform attacker in laneSpawner.transform)
+                foreach (Transform attacker in attackerPool.transform)
                 {
-                    if (attacker.position.x >= transform.position.x && attacker.position.x <= VisibleXPosition)
+                    if (attacker.gameObject.activeInHierarchy && attacker.transform.position.y == transform.position.y &&
+                        attacker.position.x >= transform.position.x && attacker.position.x <= VisibleXPosition)
                     {
                         return true;
                     }
                 }
-            }
+                return false;
+            });
         }
         return false;
     }

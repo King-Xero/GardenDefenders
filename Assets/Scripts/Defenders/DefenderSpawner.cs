@@ -46,7 +46,7 @@ public class DefenderSpawner : MonoBehaviour
             }
             else
             {
-                //flash stars counter (trigger animation)
+                starsCounter.TriggerFailAnimation();
             }
         }
     }

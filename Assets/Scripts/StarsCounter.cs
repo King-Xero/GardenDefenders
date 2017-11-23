@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -15,12 +16,14 @@ public class StarsCounter : MonoBehaviour
     public int StartingStars;
     public int CurrentStars;
 
+    private Animator animator;
     private Text starsCounterText;
     
     // Use this for initialization
     void Start()
     {
         starsCounterText = GetComponent<Text>();
+        animator = GetComponent<Animator>();
 
         CurrentStars = StartingStars;
         starsCounterText.text = CurrentStars.ToString();
@@ -53,5 +56,13 @@ public class StarsCounter : MonoBehaviour
     private void UpdateDisplay()
     {
         starsCounterText.text = CurrentStars.ToString();
+    }
+
+    public void TriggerFailAnimation()
+    {
+        if (animator)
+        {
+            animator.SetTrigger("fail");
+        }
     }
 }
