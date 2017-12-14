@@ -499,8 +499,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 690702390}
-  - component: {fileID: 690702392}
-  - component: {fileID: 690702391}
   m_Layer: 5
   m_Name: Selector_Language
   m_TagString: Untagged
@@ -530,35 +528,6 @@ RectTransform:
   m_AnchoredPosition: {x: 136.90002, y: -87}
   m_SizeDelta: {x: 476.2, y: 70.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &690702391
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 690702389}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4652cec77785f4468a5ea34d12900496, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Languages:
-  - Language: 0
-    FileName: EN_GB_Lang.gxg
-  - Language: 1
-    FileName: CY_CYM_Lang.gxg
-  - Language: 2
-    FileName: DE_DE_Lang.gxg
---- !u!114 &690702392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 690702389}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 227c49c74a45f40b2b13c344fd731c98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &810217366
 GameObject:
   m_ObjectHideFlags: 0
@@ -1111,59 +1080,76 @@ MonoBehaviour:
   m_GameObject: {fileID: 1534476031}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6b2df9bf08104242b65befa947e2866, type: 3}
+  m_Script: {fileID: 11500000, guid: 4652cec77785f4468a5ea34d12900496, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: sfx
+  Languages:
+  - Language: 0
+    FileName: EN_GB_Lang.gxg
+    icon: {fileID: 0}
+  - Language: 1
+    FileName: CY_CYM_Lang.gxg
+    icon: {fileID: 0}
+  - Language: 2
+    FileName: DE_DE_Lang.gxg
+    icon: {fileID: 0}
 --- !u!114 &1534476034
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114362647701906470, guid: 8a419dd6d999b475e9888b79c03eecf5,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1534476031}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 227c49c74a45f40b2b13c344fd731c98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
-  m_EffectDistance: {x: 2, y: -2}
-  m_UseGraphicAlpha: 1
---- !u!114 &1534476035
-MonoBehaviour:
+  CurrentSelection:
+    Language: 0
+    FileName: 
+    icon: {fileID: 0}
+--- !u!212 &1534476035
+SpriteRenderer:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114388146631589098, guid: 8a419dd6d999b475e9888b79c03eecf5,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1534476031}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 948b8c8c05c1a4edaaabce518a91e658, type: 3}
-    m_FontSize: 40
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 48
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Selection
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
 --- !u!222 &1534476036
 CanvasRenderer:
   m_ObjectHideFlags: 0

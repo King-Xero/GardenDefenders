@@ -9,6 +9,7 @@ public class PlayerPrefsManager : MonoBehaviour
     private const string SFX_VOLUME_KEY = "sfx_volume";
     private const string DIFFICULTY_KEY = "difficulty";
     private const string LEVEL_KEY = "level_unlocked_";
+    private const string LANGUAGE_KEY = "language";
 
     public static float GetMusicVolume()
     {
@@ -85,5 +86,15 @@ public class PlayerPrefsManager : MonoBehaviour
         }
         Debug.LogError("Trying to check level not in the build order");
         return false;
+    }
+
+    public static void SetLanguage(string language)
+    {
+        PlayerPrefs.SetString(LANGUAGE_KEY, language);
+    }
+
+    public static string GetLanguage()
+    {
+        return PlayerPrefs.GetString(LANGUAGE_KEY);
     }
 }

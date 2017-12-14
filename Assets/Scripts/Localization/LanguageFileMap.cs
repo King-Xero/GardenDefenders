@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class LanguageFileMap : MonoBehaviour
 {
-    [System.Serializable]
-    public class LanguageFileEntry
-    {
-        public LanguageOption Language;
-        public string FileName;
-    }
-    public LanguageFileEntry[] Languages;
+    public List<LanguageFileEntry> Languages;
+}
+
+[System.Serializable]
+public class LanguageFileEntry
+{
+    public LanguageOption Language;
+    public string FileName;
+    public Sprite icon;
 }
