@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 222797263980077844}
   - component: {fileID: 114754618817483674}
   - component: {fileID: 114272295154531560}
+  - component: {fileID: 114131587008587756}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -58,6 +59,7 @@ GameObject:
   - component: {fileID: 222244682938057516}
   - component: {fileID: 114669550606496664}
   - component: {fileID: 114873625861222986}
+  - component: {fileID: 114729532036690622}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -76,6 +78,7 @@ GameObject:
   - component: {fileID: 222561359795304330}
   - component: {fileID: 114729187962964260}
   - component: {fileID: 114186390153118228}
+  - component: {fileID: 114297593809091928}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -94,6 +97,7 @@ GameObject:
   - component: {fileID: 222533432545189746}
   - component: {fileID: 114345888918026340}
   - component: {fileID: 114655490845493890}
+  - component: {fileID: 114705857143421188}
   m_Layer: 5
   m_Name: Title_Defenders
   m_TagString: Untagged
@@ -130,6 +134,7 @@ GameObject:
   - component: {fileID: 222680851779049942}
   - component: {fileID: 114647273838201128}
   - component: {fileID: 114174354240056606}
+  - component: {fileID: 114002423904455596}
   m_Layer: 5
   m_Name: Title_Garden
   m_TagString: Untagged
@@ -173,6 +178,30 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &114002423904455596
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1631018676384122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6b2df9bf08104242b65befa947e2866, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: garden
+--- !u!114 &114131587008587756
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1028863254517986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6b2df9bf08104242b65befa947e2866, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: quit
 --- !u!114 &114174354240056606
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -278,6 +307,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45d28d7be4f4440bd888cc38edda92b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114297593809091928
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1054430111015820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6b2df9bf08104242b65befa947e2866, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: options
 --- !u!114 &114345888918026340
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -552,6 +593,18 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114705857143421188
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1106722684292116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6b2df9bf08104242b65befa947e2866, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: defenders
 --- !u!114 &114729187962964260
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -585,6 +638,18 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Options
+--- !u!114 &114729532036690622
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1032225224867250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6b2df9bf08104242b65befa947e2866, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: play
 --- !u!114 &114754618817483674
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -673,12 +738,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 114567067119898102, guid: 698addafb257e504eacebb0f1581177c,
           type: 2}
-        m_MethodName: LoadGameScene
-        m_Mode: 1
+        m_MethodName: LoadScene
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

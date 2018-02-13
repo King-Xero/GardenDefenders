@@ -13,14 +13,23 @@ public class LanguageSelector : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        languageFileMap = GetComponent<LanguageFileMap>();
+     //   languageFileMap = GetComponent<LanguageFileMap>();
 
-        flagIcon = GetComponent<SpriteRenderer>();
+     //   flagIcon = GetComponent<SpriteRenderer>();
 
-        CurrentSelection = languageFileMap.Languages.FirstOrDefault(lang => lang.FileName == PlayerPrefsManager.GetLanguage());
+     //   if (PlayerPrefsManager.GetLanguage() != null)
+	    //{
+	    //    CurrentSelection = languageFileMap.Languages.FirstOrDefault(lang => lang.FileName == PlayerPrefsManager.GetLanguage());
+     //   }
+     //   else
+     //   {
+     //       CurrentSelection = languageFileMap.Languages.First();
+     //   }
 
-        SetFlagIcon(CurrentSelection.icon);
-
+	    //if (CurrentSelection.icon)
+	    //{
+	    //    SetFlagIcon(CurrentSelection.icon);
+     //   }
     }
 
     // Update is called once per frame

@@ -5,12 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class LoseCollider : MonoBehaviour
 {
-    private LevelManager levelManager;
+    private LevelSceneManager levelManager;
 
     // Use this for initialization
     void Start()
     {
-        levelManager = FindObjectOfType<LevelManager>();
+        levelManager = FindObjectOfType<LevelSceneManager>();
     }
 
     // Update is called once per frame

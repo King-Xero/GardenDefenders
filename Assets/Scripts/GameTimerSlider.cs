@@ -12,7 +12,7 @@ public class GameTimerSlider : MonoBehaviour
     public GameObject WinLabel;
 
     private Slider timerSlider;
-    private LevelManager levelManager;
+    private LevelSceneManager levelManager;
     private bool isEndOfLevel;
     private SFXManager sfxManager;
 
@@ -25,7 +25,7 @@ public class GameTimerSlider : MonoBehaviour
         timerSlider = GetComponent<Slider>();
 
         sfxManager = FindObjectOfType<SFXManager>();
-        levelManager = FindObjectOfType<LevelManager>();
+        levelManager = FindObjectOfType<LevelSceneManager>();
         FindWinLabel();
     }
 

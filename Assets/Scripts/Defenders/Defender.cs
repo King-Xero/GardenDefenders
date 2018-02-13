@@ -43,7 +43,7 @@ public class Defender : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (!LevelManager.GameIsPaused && DefenderButton.ShovelActive)
+        if (!LevelSceneManager.GameIsPaused && DefenderButton.ShovelActive)
         {
             if (sfxManager)
             {

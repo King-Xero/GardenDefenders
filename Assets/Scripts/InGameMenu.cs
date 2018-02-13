@@ -18,7 +18,7 @@ public class InGameMenu : MonoBehaviour {
 
     public void ToggleMenu()
     {
-        if (LevelManager.GameIsPaused)
+        if (LevelSceneManager.GameIsPaused)
         {
             gameObject.SetActive(false);
             //MenuButton.SetActive(true);
@@ -29,6 +29,6 @@ public class InGameMenu : MonoBehaviour {
             //MenuButton.SetActive(false);
             Time.timeScale = 0.0f;
         }
-        LevelManager.GameIsPaused = !LevelManager.GameIsPaused;
+        LevelSceneManager.GameIsPaused = !LevelSceneManager.GameIsPaused;
     }
 }
