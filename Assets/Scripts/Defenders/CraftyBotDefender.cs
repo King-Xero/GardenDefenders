@@ -11,7 +11,7 @@ public class CraftyBotDefender : MonoBehaviour {
     public float NervousRange;
 
     private Animator animator;
-    private AttackerSpawner laneSpawner;
+    private EnemyWavesManager enemyWavesManager;
     private float movementSpeed;
 
     // Use this for initialization
@@ -19,8 +19,11 @@ public class CraftyBotDefender : MonoBehaviour {
     {
         animator = GetComponent<Animator>();
 
-        laneSpawner = FindObjectsOfType<AttackerSpawner>()
-            .Single(spawner => spawner.transform.position.y == gameObject.transform.position.y);
+        enemyWavesManager = FindObjectOfType<EnemyWavesManager>();
+        if (enemyWavesManager == null)
+        {
+            Debug.LogError("Enemy waves manager not found");
+        }
     }
 
     // Update is called once per frame
@@ -67,16 +70,17 @@ public class CraftyBotDefender : MonoBehaviour {
         Attack(colliderGameObject);
 
         //Destroy(colliderGameObject);
-        colliderGameObject.SetActive(false);
+
+        colliderGameObject.GetComponent<Health>().DestroyObject();
 
         Debug.Log("Walking attacker collided with " + col);
     }
 
     private bool AttackerInRange(float range)
     {
-        if (laneSpawner && laneSpawner.AttackerPools != null)
+        if (enemyWavesManager && enemyWavesManager.EnemyPools != null)
         {
-            return laneSpawner.AttackerPools.Any(attackerPool =>
+            return enemyWavesManager.EnemyPools.Any(attackerPool =>
             {
                 foreach (Transform attacker in attackerPool.transform)
                 {

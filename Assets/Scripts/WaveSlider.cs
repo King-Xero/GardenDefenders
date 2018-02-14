@@ -12,7 +12,7 @@ public class WaveSlider : MonoBehaviour
     private SFXManager sfxManager;
     private EnemyWavesManager enemyWavesManager;
     private string levelLocalizedString, waveLocalizedString;
-    private int totalEnemiesInLevel;
+    private float totalEnemiesInLevel;
 
     private void Start()
     {
@@ -42,14 +42,15 @@ public class WaveSlider : MonoBehaviour
         }
         else
         {
-            waveLocalizedString = levelText.text;
+            waveLocalizedString = waveText.text;
         }
     }
 
     private void Update()
     {
-        levelText.text = levelLocalizedString + ": " + enemyWavesManager.NumCurrentLevel;
-        waveText.text = waveLocalizedString + ": " + enemyWavesManager.NumCurrentWave;
+        //ToDo change method of retrieving current level
+        levelText.text = levelLocalizedString + ": " + EnemyWavesManager.NumCurrentLevel;
+        waveText.text = waveLocalizedString + ": " + enemyWavesManager.GetCurrentWave();
     }
 
     //Called once at the start of a level
@@ -61,6 +62,6 @@ public class WaveSlider : MonoBehaviour
     //Called every time an enemy is killed
     public void UpdateSlider()
     {
-        waveSlider.value = 1 - (1 / totalEnemiesInLevel);
+        waveSlider.value -= (1 / totalEnemiesInLevel);
     }
 }

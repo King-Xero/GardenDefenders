@@ -5,20 +5,23 @@ using UnityEngine;
 
 public class EnemyWavesManager : MonoBehaviour
 {
-    private const int NUMBEROFLANES = 5;
+    //Higher the number, slower the spawn rate
+    //ToDo Use this number to crate difficulty settings
+    private const int NUMBEROFLANES = 1;
 
-    private int numTotalWaves, numEnemiesInWave, numTotalEnemiesInLevel;
+    private int numTotalWaves, numEnemiesInWave, numTotalEnemiesInLevel, numCurrentWave;
     private Level currentLevel;
     private Wave currentWave;
     private Dictionary<GameObject, int> currentWaveDictionary;
-    private List<ObjectPooler> enemyPools;
     private WaveSlider waveSlider;
-
-    public int NumCurrentLevel, NumCurrentWave;
-    public List<GameObject> SpawnPoints;
     
-	// Use this for initialization
-	void Awake ()
+    public List<GameObject> SpawnPoints;
+    public List<ObjectPooler> EnemyPools;
+
+    public static int NumCurrentLevel = 1;
+
+    // Use this for initialization
+    void Awake ()
 	{
 	    if (SpawnPoints == null)
 	    {
@@ -26,7 +29,7 @@ public class EnemyWavesManager : MonoBehaviour
 	    }
 
 	    currentLevel = LevelEditorDataManager.Instance.GetLevelData(1);
-	    NumCurrentWave = 0;
+	    numCurrentWave = 0;
 	    numTotalEnemiesInLevel = 0;
 	    numTotalWaves = currentLevel.Waves.Length;
 	    numEnemiesInWave = 0;
@@ -40,9 +43,9 @@ public class EnemyWavesManager : MonoBehaviour
 	void Update () {
 	    if (numEnemiesInWave <= 0)
 	    {
-	        if (NumCurrentWave <= numTotalWaves)
+	        if (numCurrentWave <= numTotalWaves)
 	        {
-	            NumCurrentWave++;
+	            numCurrentWave++;
                 //Add wave spawn delay
                 //Update UI for new wave
 	            SpawnWave();
@@ -52,7 +55,7 @@ public class EnemyWavesManager : MonoBehaviour
 	            EndLevel();
 	        }
 	    }
-	    else if (numEnemiesInWave > 0 && NumCurrentWave <= numTotalWaves)
+	    else if (numEnemiesInWave > 0 && numCurrentWave <= numTotalWaves)
 	    {
 	        UpdateWave();
 	    }
@@ -60,7 +63,7 @@ public class EnemyWavesManager : MonoBehaviour
 
     void SetupLevelObjectPools()
     {
-        enemyPools = new List<ObjectPooler>();
+        EnemyPools = new List<ObjectPooler>();
         var levelEnemiesDictionary = new Dictionary<GameObject, int>();
 
         foreach (var wave in currentLevel.Waves)
@@ -84,19 +87,24 @@ public class EnemyWavesManager : MonoBehaviour
 
         foreach (var enemyType in levelEnemiesDictionary)
         {
-            var enemyPool = new GameObject().AddComponent<ObjectPooler>();
+            var enemyPool = new GameObject(enemyType.Key.name + " Object Pool").AddComponent<ObjectPooler>();
+            enemyPool.transform.SetParent(transform);
             enemyPool.PoolObjectType = enemyType.Key;
-            enemyPool.PooledAmount = Mathf.RoundToInt(enemyType.Value * 0.6f);
+            enemyPool.PooledAmount = Mathf.RoundToInt(enemyType.Value * 0.7f);
+            if (enemyPool.PooledAmount < enemyType.Value)
+            {
+                enemyPool.CanGrow = true;
+            }
             //Hack to reuse the object pooler for attackers and defenders.
             enemyPool.PooledObjectPrefabs = new []{enemyType.Key};
             
-            enemyPools.Add(enemyPool);
+            EnemyPools.Add(enemyPool);
         }
     }
 
     void SpawnWave()
     {
-        currentWave = currentLevel.Waves[NumCurrentWave];
+        currentWave = currentLevel.Waves[numCurrentWave - 1];
         currentWaveDictionary = new Dictionary<GameObject, int>();
 
         foreach (var enemyType in currentWave.WaveEnemies)
@@ -113,6 +121,7 @@ public class EnemyWavesManager : MonoBehaviour
             if (!(currentWaveDictionary[enemy] <= 0) && IsTimeToSpawn(enemy))
             {
                 SpawnEnemy(enemy);
+                currentWaveDictionary[enemy] -= 1;
             }
         }
     }
@@ -142,9 +151,8 @@ public class EnemyWavesManager : MonoBehaviour
     void SpawnEnemy(GameObject enemyGameObject)
     {
         GameObject spawnPoint = SpawnPoints.ElementAt(Mathf.RoundToInt(Random.Range(0, SpawnPoints.Count)));
-        ObjectPooler enemyObjectPooler = enemyPools.Find(p => p.PoolObjectType == enemyGameObject);
+        ObjectPooler enemyObjectPooler = EnemyPools.Find(p => p.PoolObjectType == enemyGameObject);
         GameObject enemyToSpawn = enemyObjectPooler.GetPooledObject();
-
         enemyToSpawn.transform.position = spawnPoint.transform.position;
         enemyToSpawn.SetActive(true);
     }
@@ -154,12 +162,27 @@ public class EnemyWavesManager : MonoBehaviour
         
     }
 
+    public int GetCurrentWave()
+    {
+        return numCurrentWave;
+    }
+
     public void EnemyDestroyed(GameObject enemyGameObject)
     {
-        if (currentWaveDictionary.ContainsKey(enemyGameObject))
+        Attacker destroyedattacker = enemyGameObject.GetComponent<Attacker>();
+
+        if (destroyedattacker != null)
         {
-            currentWaveDictionary[enemyGameObject] -= 1;
-            numTotalEnemiesInLevel--;
+            foreach (var enemy in currentWaveDictionary.Keys)
+            {
+                var dictAttacker = enemy.GetComponent<Attacker>();
+                if (dictAttacker != null && dictAttacker.AttackerId == destroyedattacker.AttackerId)
+                {
+                    numEnemiesInWave--;
+                    waveSlider.UpdateSlider();
+                    return;
+                }
+            }
         }
     }
 }

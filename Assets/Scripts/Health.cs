@@ -8,12 +8,16 @@ public class Health : MonoBehaviour
     [Range(0, 200)] public float HealthPoints;
     public EventHandler OnHealthDecreased = (sender, e) => { };
 
+    private Attacker attackerComponent;
+
     private float hp;
 
     // Use this for initialization
     void Start()
     {
         hp = HealthPoints;
+
+        attackerComponent = GetComponent<Attacker>();
     }
 
     // Update is called once per frame
@@ -35,6 +39,10 @@ public class Health : MonoBehaviour
     public void DestroyObject()
     {
         //Destroy(gameObject);
+        if (attackerComponent)
+        {
+            attackerComponent.AttackerDestroyed();
+        }
         gameObject.SetActive(false);
         hp = HealthPoints;
     }

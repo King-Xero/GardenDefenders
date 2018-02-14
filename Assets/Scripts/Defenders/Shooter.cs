@@ -10,15 +10,18 @@ public class Shooter : MonoBehaviour
 
     private GameObject projectileParent;
     private Animator animator;
-    private AttackerSpawner laneSpawner;
+    private EnemyWavesManager enemyWavesManager;
 
     // Use this for initialization
     void Start()
     {
         animator = GetComponent<Animator>();
 
-        laneSpawner = FindObjectsOfType<AttackerSpawner>()
-            .Single(spawner => spawner.transform.position.y == gameObject.transform.position.y);
+        enemyWavesManager = FindObjectOfType<EnemyWavesManager>();
+        if (enemyWavesManager == null)
+        {
+            Debug.LogError("Enemy waves manager not found");
+        }
 
         projectileParent = GameObject.Find("Projectiles");
 
@@ -48,9 +51,9 @@ public class Shooter : MonoBehaviour
 
     private bool IsAttackerInSight()
     {
-        if (laneSpawner && laneSpawner.AttackerPools != null)
+        if (enemyWavesManager && enemyWavesManager.EnemyPools != null)
         {
-            return laneSpawner.AttackerPools.Any(attackerPool =>
+            return enemyWavesManager.EnemyPools.Any(attackerPool =>
             {
                 foreach (Transform attacker in attackerPool.transform)
                 {
