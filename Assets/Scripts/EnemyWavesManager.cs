@@ -1,25 +1,30 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class EnemyWavesManager : MonoBehaviour
 {
     //Higher the number, slower the spawn rate
     //ToDo Use this number to crate difficulty settings
-    private const int NUMBEROFLANES = 1;
+    private const int NUMBER_OF_LANES = 1; //5;
+    private const float POPUP_DISPLAY_TIME = 3f;
 
-    private int numTotalWaves, numEnemiesInWave, numTotalEnemiesInLevel, numCurrentWave;
+    private int numTotalWaves, numEnemiesInWave, numTotalEnemiesInLevel, numCurrentWave, numCurrentLevel;
     private Level currentLevel;
     private Wave currentWave;
     private Dictionary<GameObject, int> currentWaveDictionary;
     private WaveSlider waveSlider;
+    private LevelSceneManager levelSceneManager;
     
+    public string WaveKey;
+    public PopUpText WaveMessage;
     public List<GameObject> SpawnPoints;
     public List<ObjectPooler> EnemyPools;
-
-    public static int NumCurrentLevel = 1;
-
+    
     // Use this for initialization
     void Awake ()
 	{
@@ -28,26 +33,28 @@ public class EnemyWavesManager : MonoBehaviour
 	        Debug.LogWarning("No enemy spawn points found");
 	    }
 
-	    currentLevel = LevelEditorDataManager.Instance.GetLevelData(1);
-	    numCurrentWave = 0;
+        numCurrentLevel = PlayerPrefsManager.GetSelectedLevel();
+        currentLevel = LevelEditorDataManager.Instance.GetLevelData(numCurrentLevel);
+        numCurrentWave = 0;
 	    numTotalEnemiesInLevel = 0;
 	    numTotalWaves = currentLevel.Waves.Length;
 	    numEnemiesInWave = 0;
-
+	    
 	    waveSlider = FindObjectOfType<WaveSlider>();
+	    levelSceneManager = FindObjectOfType<LevelSceneManager>();
 
 	    SetupLevelObjectPools();
 	}
 	
-	// Update is called once per frame
 	void Update () {
 	    if (numEnemiesInWave <= 0)
 	    {
-	        if (numCurrentWave <= numTotalWaves)
+	        if (numCurrentWave < numTotalWaves)
 	        {
 	            numCurrentWave++;
                 //Add wave spawn delay
-                //Update UI for new wave
+                //ToDo Update UI for new wave
+	            ShowWaveMessage();
 	            SpawnWave();
 	        }
 	        else
@@ -116,14 +123,24 @@ public class EnemyWavesManager : MonoBehaviour
 
     void UpdateWave()
     {
+        List<Action> dictionaryActions = new List<Action>();
+
         foreach (var enemy in currentWaveDictionary.Keys)
         {
             if (!(currentWaveDictionary[enemy] <= 0) && IsTimeToSpawn(enemy))
             {
                 SpawnEnemy(enemy);
-                currentWaveDictionary[enemy] -= 1;
+                dictionaryActions.Add(() =>
+                {
+                    currentWaveDictionary[enemy] -= 1;
+                });
             }
         }
+        foreach (var action in dictionaryActions)
+        {
+            action();
+        }
+
     }
 
     bool IsTimeToSpawn(GameObject enemyGameObject)
@@ -143,7 +160,7 @@ public class EnemyWavesManager : MonoBehaviour
             Debug.LogWarning("Spawn rate is capped by frame rate");
         }
 
-        float spawnThreshold = spawnsPerSecond * Time.deltaTime / NUMBEROFLANES;
+        float spawnThreshold = spawnsPerSecond * Time.deltaTime / NUMBER_OF_LANES;
 
         return Random.value < spawnThreshold;
     }
@@ -159,7 +176,21 @@ public class EnemyWavesManager : MonoBehaviour
 
     void EndLevel()
     {
-        
+        //PlayerPrefsManager.CompleteLevel(numCurrentLevel);
+        //PlayerPrefsManager.UnlockLevel(numCurrentLevel + 1);
+        Debug.Log("Level Finished");
+        //if (sfxManager)
+        //{
+        //    sfxManager.PlayClip(sfxManager.LevelEnd);
+        //}
+        //ToDo Update UI for level complete
+
+    }
+
+    void ShowWaveMessage()
+    {
+        WaveMessage.Text = LocalizationManager.Instance.GetLocalizedValue(WaveKey)+ ": " + numCurrentWave;
+        WaveMessage.DisplayText(POPUP_DISPLAY_TIME);
     }
 
     public int GetCurrentWave()

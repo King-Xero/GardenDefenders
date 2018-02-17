@@ -29,7 +29,7 @@ public class JumpingAttacker : MonoBehaviour
             return;
         }
 
-        if (colliderGameObject.GetComponent<StoneDefender>())
+        if (colliderGameObject.GetComponent<StoneDefender>() || colliderGameObject.GetComponent<MagicRock>() || colliderGameObject.GetComponent<EnhancedMagicRock>())
         {
             animator.SetTrigger("jumpTrigger");
         }

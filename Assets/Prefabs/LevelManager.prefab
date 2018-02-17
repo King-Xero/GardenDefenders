@@ -52,8 +52,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AutoLoadNextlevel: 0
-  AutoLoadNextLevelAfter: 3
-  MainMenuScene: 1
-  GameScene: 4
-  WinScene: 2
-  LoseScene: 3
+  AutoLoadAfter: 3
+  LanguageScene: 1
+  MainMenuScene: 2
+  GameScene: 5
+  WinScene: 3
+  LoseScene: 4

@@ -51,9 +51,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3813458d38ba4994692d0babe847d926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WaveKey: wave
+  WaveMessage: {fileID: 0}
   SpawnPoints:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  EnemyPools: []

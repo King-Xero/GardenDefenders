@@ -52,4 +52,9 @@ public class LevelEditorDataManager : MonoBehaviour
         }
         return ret;
     }
+
+    public Dictionary<int, Level> GetLevelsDictionary()
+    {
+        return levelsDictionary;
+    }
 }

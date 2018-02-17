@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
@@ -8,12 +9,15 @@ public class LocalizationManager : MonoBehaviour {
     public static LocalizationManager Instance;
 
     public string DefaultLanguageFile;
+    public EventHandler LanguageUpdateEventHandler = (sender, args) => { };
 
     private const string MISSING_STRING_TEXT = "No localization found";
     private Dictionary<string, string> localizedTextDictionary;
+    
 
     private void Awake()
     {
+        SetLangauge();
         if (Instance == null)
         {
             DontDestroyOnLoad(gameObject);
@@ -23,11 +27,20 @@ public class LocalizationManager : MonoBehaviour {
         {
             Destroy(gameObject);
         }
-
-        LoadLocalizedText(DefaultLanguageFile);
     }
 
-	public void LoadLocalizedText(string filename)
+    private void SetLangauge()
+    {
+        string lang = PlayerPrefsManager.GetLanguage();
+
+        if (String.IsNullOrEmpty(lang))
+        {
+            lang = DefaultLanguageFile;
+        }
+        LoadLocalizedText(lang);
+    }
+
+    public void LoadLocalizedText(string filename)
     {
         localizedTextDictionary = new Dictionary<string, string>();
         string filePath = Path.Combine(Application.streamingAssetsPath, filename);
@@ -45,6 +58,7 @@ public class LocalizationManager : MonoBehaviour {
         {
             Debug.LogError("Language file not found.");
         }
+        LanguageUpdateEventHandler(this, EventArgs.Empty);
     }
 
     public string GetLocalizedValue(string key)

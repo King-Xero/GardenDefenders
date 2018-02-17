@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -8,7 +9,8 @@ public class LevelSceneManager : MonoBehaviour
     public static bool GameIsPaused;
 
     public bool AutoLoadNextlevel;
-    public float AutoLoadNextLevelAfter;
+    public float AutoLoadAfter;
+    public int LanguageScene;
     public int MainMenuScene;
     public int GameScene;
     public int WinScene;
@@ -18,7 +20,7 @@ public class LevelSceneManager : MonoBehaviour
     {
         if (AutoLoadNextlevel)
         {
-            Invoke("LoadNextLevel", AutoLoadNextLevelAfter);
+            Invoke("AutoLoadNextScene", AutoLoadAfter);
         }
         else
         {
@@ -37,17 +39,18 @@ public class LevelSceneManager : MonoBehaviour
         SceneManager.LoadScene(scene);
     }
 
-    public void LoadNextLevel()
+    //Only used after splash screen
+    private void AutoLoadNextScene()
     {
-        int nextScene = SceneManager.GetActiveScene().buildIndex + 1;
+        string lang = PlayerPrefsManager.GetLanguage();
 
-        if (nextScene >= SceneManager.sceneCountInBuildSettings)
+        if (String.IsNullOrEmpty(lang))
         {
-            LoadScene(WinScene);
+            LoadScene(LanguageScene);
         }
         else
         {
-            LoadScene(nextScene);
+            LoadScene(MainMenuScene);
         }
     }
 

@@ -36,8 +36,9 @@ public class Star : MonoBehaviour {
 		
 	}
 
-    private void OnMouseDown()
+    public void OnMouseDown()
     {
+        Debug.Log("Star Collected");
         if (starsCounter)
         {
             starsCounter.AddStars(StarsAmount);

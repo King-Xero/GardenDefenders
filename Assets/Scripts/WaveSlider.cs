@@ -13,6 +13,7 @@ public class WaveSlider : MonoBehaviour
     private EnemyWavesManager enemyWavesManager;
     private string levelLocalizedString, waveLocalizedString;
     private float totalEnemiesInLevel;
+    private int numCurrentLevel;
 
     private void Start()
     {
@@ -20,6 +21,7 @@ public class WaveSlider : MonoBehaviour
         sfxManager = FindObjectOfType<SFXManager>();
         levelSceneManager = FindObjectOfType<LevelSceneManager>();
         enemyWavesManager = FindObjectOfType<EnemyWavesManager>();
+        numCurrentLevel = PlayerPrefsManager.GetSelectedLevel();
 
         if (!WinLabel)
         {
@@ -48,8 +50,7 @@ public class WaveSlider : MonoBehaviour
 
     private void Update()
     {
-        //ToDo change method of retrieving current level
-        levelText.text = levelLocalizedString + ": " + EnemyWavesManager.NumCurrentLevel;
+        levelText.text = levelLocalizedString + ": " + numCurrentLevel;
         waveText.text = waveLocalizedString + ": " + enemyWavesManager.GetCurrentWave();
     }
 
