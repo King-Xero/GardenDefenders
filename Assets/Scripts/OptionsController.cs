@@ -7,6 +7,7 @@ public class OptionsController : MonoBehaviour
 {
     public Slider MusicVolumerSlider;
     public Slider SfxVolumeSlider;
+    public LanguageSelector LanguageSelector;
 
     private MusicManager musicManager;
     private SFXManager sfxManager;
@@ -43,6 +44,12 @@ public class OptionsController : MonoBehaviour
     {
         PlayerPrefsManager.SetMusicVolume(MusicVolumerSlider.value);
         PlayerPrefsManager.SetSFXVolume(SfxVolumeSlider.value);
+
+        if (LanguageSelector)
+        {
+            PlayerPrefsManager.SetLanguage(LanguageSelector.CurrentSelection.FileName);
+            LocalizationManager.Instance.LoadLocalizedText(LanguageSelector.CurrentSelection.FileName);
+        }
 
         gameObject.SetActive(false);
     }

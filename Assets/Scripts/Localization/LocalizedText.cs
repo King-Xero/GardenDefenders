@@ -24,4 +24,9 @@ public class LocalizedText : MonoBehaviour
     {
         textComponent.text = LocalizationManager.Instance.GetLocalizedValue(key);
     }
+
+    void OnDestroy()
+    {
+        LocalizationManager.Instance.LanguageUpdateEventHandler -= SetText;
+    }
 }

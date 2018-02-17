@@ -9,7 +9,7 @@ public class LocalizationManager : MonoBehaviour {
     public static LocalizationManager Instance;
 
     public string DefaultLanguageFile;
-    public EventHandler LanguageUpdateEventHandler = (sender, args) => { };
+    public event EventHandler LanguageUpdateEventHandler = delegate { };
 
     private const string MISSING_STRING_TEXT = "No localization found";
     private Dictionary<string, string> localizedTextDictionary;

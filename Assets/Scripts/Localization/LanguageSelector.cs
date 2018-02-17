@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LanguageSelector : MonoBehaviour {
 
@@ -9,27 +10,29 @@ public class LanguageSelector : MonoBehaviour {
 
     private LanguageFileMap languageFileMap;
 
-    private SpriteRenderer flagIcon;
+    private Image flagIcon;
 
 	// Use this for initialization
 	void Start () {
-     //   languageFileMap = GetComponent<LanguageFileMap>();
+        languageFileMap = GetComponent<LanguageFileMap>();
 
-     //   flagIcon = GetComponent<SpriteRenderer>();
+        flagIcon = GetComponent<Image>();
 
-     //   if (PlayerPrefsManager.GetLanguage() != null)
-	    //{
-	    //    CurrentSelection = languageFileMap.Languages.FirstOrDefault(lang => lang.FileName == PlayerPrefsManager.GetLanguage());
-     //   }
-     //   else
-     //   {
-     //       CurrentSelection = languageFileMap.Languages.First();
-     //   }
+	    var lang = PlayerPrefsManager.GetLanguage();
 
-	    //if (CurrentSelection.icon)
-	    //{
-	    //    SetFlagIcon(CurrentSelection.icon);
-     //   }
+        if (lang != null)
+        {
+            CurrentSelection = languageFileMap.Languages.FirstOrDefault(l => l.FileName == lang);
+        }
+        else
+        {
+            CurrentSelection = languageFileMap.Languages.First();
+        }
+
+        if (CurrentSelection.icon)
+        {
+            SetFlagIcon(CurrentSelection.icon);
+        }
     }
 
     // Update is called once per frame
@@ -49,6 +52,7 @@ public class LanguageSelector : MonoBehaviour {
         {
             CurrentSelection = languageFileMap.Languages.ElementAt(index - 1);
         }
+        SetFlagIcon(CurrentSelection.icon);
     }
 
     public void NextLanguage()
@@ -63,6 +67,7 @@ public class LanguageSelector : MonoBehaviour {
         {
             CurrentSelection = languageFileMap.Languages.ElementAt(index + 1);
         }
+        SetFlagIcon(CurrentSelection.icon);
     }
 
     private void SetFlagIcon(Sprite icon){

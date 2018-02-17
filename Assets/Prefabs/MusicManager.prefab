@@ -134,8 +134,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LevelMusicChangeArray:
   - {fileID: 0}
-  - {fileID: 8300000, guid: a158c8d012dbc1a48bb05ec2eb3968af, type: 3}
   - {fileID: 0}
+  - {fileID: 8300000, guid: a158c8d012dbc1a48bb05ec2eb3968af, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 8300000, guid: d85a3915812798e47a01601bd007394f, type: 3}
