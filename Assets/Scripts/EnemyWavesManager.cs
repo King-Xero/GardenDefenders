@@ -9,9 +9,10 @@ using Random = UnityEngine.Random;
 public class EnemyWavesManager : MonoBehaviour
 {
     //Higher the number, slower the spawn rate
-    //ToDo Use this number to crate difficulty settings
+    //ToDo Use this number to create difficulty settings
     private const int NUMBER_OF_LANES = 1; //5;
     private const float POPUP_DISPLAY_TIME = 3f;
+    private const float WAVE_SPAWN_DELAY = 4f;
 
     private int numTotalWaves, numEnemiesInWave, numTotalEnemiesInLevel, numCurrentWave, numCurrentLevel;
     private Level currentLevel;
@@ -19,13 +20,16 @@ public class EnemyWavesManager : MonoBehaviour
     private Dictionary<GameObject, int> currentWaveDictionary;
     private WaveSlider waveSlider;
     private LevelSceneManager levelSceneManager;
+    private SFXManager sfxManager;
     
     public string WaveKey;
     public PopUpText WaveMessage;
+    public GameObject LevelCompletePanel;
+    public GameObject LevelFailedPanel;
     public List<GameObject> SpawnPoints;
     public List<ObjectPooler> EnemyPools;
     
-    // Use this for initialization
+    
     void Awake ()
 	{
 	    if (SpawnPoints == null)
@@ -42,8 +46,9 @@ public class EnemyWavesManager : MonoBehaviour
 	    
 	    waveSlider = FindObjectOfType<WaveSlider>();
 	    levelSceneManager = FindObjectOfType<LevelSceneManager>();
+	    sfxManager = FindObjectOfType<SFXManager>();
 
-	    SetupLevelObjectPools();
+        SetupLevelObjectPools();
 	}
 	
 	void Update () {
@@ -52,14 +57,11 @@ public class EnemyWavesManager : MonoBehaviour
 	        if (numCurrentWave < numTotalWaves)
 	        {
 	            numCurrentWave++;
-                //Add wave spawn delay
-                //ToDo Update UI for new wave
-	            ShowWaveMessage();
-	            SpawnWave();
+	            Invoke("StartNextWave", WAVE_SPAWN_DELAY);
 	        }
 	        else
 	        {
-	            EndLevel();
+	            LevelComplete();
 	        }
 	    }
 	    else if (numEnemiesInWave > 0 && numCurrentWave <= numTotalWaves)
@@ -174,23 +176,38 @@ public class EnemyWavesManager : MonoBehaviour
         enemyToSpawn.SetActive(true);
     }
 
-    void EndLevel()
+    void LevelComplete()
     {
         //PlayerPrefsManager.CompleteLevel(numCurrentLevel);
         //PlayerPrefsManager.UnlockLevel(numCurrentLevel + 1);
         Debug.Log("Level Finished");
-        //if (sfxManager)
-        //{
-        //    sfxManager.PlayClip(sfxManager.LevelEnd);
-        //}
-        //ToDo Update UI for level complete
-
+        if (LevelCompletePanel)
+        {
+            LevelCompletePanel.SetActive(true);
+        }
+        if (sfxManager)
+        {
+            sfxManager.PlayClip(sfxManager.LevelEnd);
+        }
     }
 
     void ShowWaveMessage()
     {
+        sfxManager.PlayClip(sfxManager.WaveStarted);
         WaveMessage.Text = LocalizationManager.Instance.GetLocalizedValue(WaveKey)+ ": " + numCurrentWave;
         WaveMessage.DisplayText(POPUP_DISPLAY_TIME);
+    }
+
+    void StartNextWave()
+    {
+        ShowWaveMessage();
+        SpawnWave();
+    }
+
+    public void StartNextLevel()
+    {
+        PlayerPrefsManager.SetSelectedLevel(numCurrentLevel + 1);
+        levelSceneManager.LoadGameScene();
     }
 
     public int GetCurrentWave()

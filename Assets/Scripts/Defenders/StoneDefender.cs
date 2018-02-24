@@ -10,7 +10,7 @@ public class StoneDefender : MonoBehaviour
     private SpriteRenderer spriteRend;
     private float maxHealth;
 
-	// Use this for initialization
+	
 	void Start ()
 	{
 	    anim = GetComponent<Animator>();
@@ -20,7 +20,7 @@ public class StoneDefender : MonoBehaviour
         health.OnHealthDecreased += Rock_OnHealthDecreased;
 	}
 	
-	// Update is called once per frame
+	
 	void Update () {
 		
 	}

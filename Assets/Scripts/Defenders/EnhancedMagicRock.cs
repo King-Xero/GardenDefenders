@@ -11,7 +11,7 @@ public class EnhancedMagicRock : MonoBehaviour {
     private Animator animator;
     private EnemyWavesManager enemyWavesManager;
 
-    // Use this for initialization
+    
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -23,7 +23,7 @@ public class EnhancedMagicRock : MonoBehaviour {
         }
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         if (IsAttackerInSight())

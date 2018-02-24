@@ -7,13 +7,13 @@ public class WalkingAttacker : MonoBehaviour
 {
     private Attacker attacker;
 
-    // Use this for initialization
+    
     void Start()
     {
         attacker = GetComponent<Attacker>();
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
     }

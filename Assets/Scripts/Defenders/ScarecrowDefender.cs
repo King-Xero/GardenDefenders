@@ -12,7 +12,7 @@ public class ScarecrowDefender : MonoBehaviour {
     private EnemyWavesManager enemyWavesManager;
     private GameObject currentTarget;
 
-	// Use this for initialization
+	
 	void Start () {
         animator = GetComponent<Animator>();
 
@@ -23,7 +23,7 @@ public class ScarecrowDefender : MonoBehaviour {
 	    }
     }
 	
-	// Update is called once per frame
+	
 	void Update () {
 
         if (!currentTarget || !currentTarget.activeInHierarchy)

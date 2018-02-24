@@ -17,7 +17,7 @@ public class PumpkinDefender : MonoBehaviour {
     private EnemyWavesManager enemyWavesManager;
     private IEnumerable<Attacker> currentTargets;
 
-	// Use this for initialization
+	
 	void Start () {
         animator = GetComponent<Animator>();
 
@@ -28,7 +28,7 @@ public class PumpkinDefender : MonoBehaviour {
 	    }
     }
 	
-	// Update is called once per frame
+	
 	void Update () {
         if (IsAttackerInSight())
         {

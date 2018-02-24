@@ -18,7 +18,7 @@ public class GameLevelSelect : MonoBehaviour
     public Sprite CompletedLevelSprite;
     public Sprite UncompletedLevelSprite;
 
-    // Use this for initialization
+    
     void Start ()
 	{
 	    levelsDictionary = LevelEditorDataManager.Instance.GetLevelsDictionary();
@@ -49,7 +49,7 @@ public class GameLevelSelect : MonoBehaviour
 	    UpdateNextButton();
     }
 	
-	// Update is called once per frame
+	
 	void Update ()
     {
         UpdateLevelSelectionText();

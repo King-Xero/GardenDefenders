@@ -19,7 +19,7 @@ public class StarsCounter : MonoBehaviour
     private Animator animator;
     private Text starsCounterText;
     
-    // Use this for initialization
+    
     void Start()
     {
         starsCounterText = GetComponent<Text>();
@@ -29,7 +29,7 @@ public class StarsCounter : MonoBehaviour
         starsCounterText.text = CurrentStars.ToString();
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
     }

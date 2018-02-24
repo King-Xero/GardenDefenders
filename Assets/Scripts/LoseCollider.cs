@@ -7,13 +7,13 @@ public class LoseCollider : MonoBehaviour
 {
     private LevelSceneManager levelManager;
 
-    // Use this for initialization
+    
     void Start()
     {
         levelManager = FindObjectOfType<LevelSceneManager>();
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
     }

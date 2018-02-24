@@ -13,7 +13,7 @@ public class SmugglerAttacker : MonoBehaviour
     private bool smuggleTarget;
     private Vector3 smugglerBoxPosition;
 
-    // Use this for initialization
+    
     void Start()
     {
         if (!CheckLaneForDefenders())

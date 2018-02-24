@@ -8,14 +8,14 @@ public class JumpingAttacker : MonoBehaviour
     private Animator animator;
     private Attacker attacker;
 
-    // Use this for initialization
+    
     void Start()
     {
         animator = GetComponent<Animator>();
         attacker = GetComponent<Attacker>();
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
     }

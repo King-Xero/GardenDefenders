@@ -10,13 +10,13 @@ public class Projectile : MonoBehaviour
     [Range(0, 100)]
     public float Damage;
 
-    // Use this for initialization
+    
     void Start()
     {
         gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         transform.Translate(Vector3.right * Speed * Time.deltaTime);

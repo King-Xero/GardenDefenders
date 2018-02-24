@@ -11,7 +11,7 @@ public class DefenderSpawner : MonoBehaviour
     private StarsCounter starsCounter;
     private SFXManager sfxManager;
     
-    // Use this for initialization
+    
     void Start()
     {
         sfxManager = FindObjectOfType<SFXManager>();
@@ -25,7 +25,7 @@ public class DefenderSpawner : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
     }

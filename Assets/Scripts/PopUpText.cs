@@ -24,7 +24,7 @@ public class PopUpText : MonoBehaviour
         }
     }
 
-    // Use this for initialization
+    
     void Start ()
     {
         messageText = GetComponent<Text>();

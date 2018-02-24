@@ -135,3 +135,5 @@ MonoBehaviour:
   DefenderPlaced: {fileID: 8300000, guid: bbabd23361d5adf42b1bb2f61fb6f4e9, type: 3}
   DefenderRemoved: {fileID: 8300000, guid: e669bcc1e7b014f14b730305c86d1fc5, type: 3}
   LevelEnd: {fileID: 8300000, guid: d1ccb9147970411449e2662c0fc1d707, type: 3}
+  StarCollected: {fileID: 8300000, guid: 9143debc82ca04d5888ec4c756551eab, type: 3}
+  WaveStarted: {fileID: 8300000, guid: 367272cd1e551c34bab736b5dbcbc9b0, type: 3}

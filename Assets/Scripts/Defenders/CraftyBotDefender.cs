@@ -14,7 +14,7 @@ public class CraftyBotDefender : MonoBehaviour {
     private EnemyWavesManager enemyWavesManager;
     private float movementSpeed;
 
-    // Use this for initialization
+    
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -26,7 +26,7 @@ public class CraftyBotDefender : MonoBehaviour {
         }
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         if (animator.GetBool("isAttacking"))

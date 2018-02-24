@@ -19,7 +19,7 @@ public class DefenderButton : MonoBehaviour
     private Image buttonImage;
     private Text costText;
     
-    // Use this for initialization
+    
     void Start()
     {
         defenderButtons = FindObjectsOfType<DefenderButton>();
@@ -57,7 +57,7 @@ public class DefenderButton : MonoBehaviour
         }
     }
 
-    // Update is called once per frame 
+     
     void Update()
     {
         if (animator)

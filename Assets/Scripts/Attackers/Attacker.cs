@@ -15,7 +15,7 @@ public class Attacker : MonoBehaviour
     private Animator animator;
     private EnemyWavesManager enemyWavesManager;
 
-    // Use this for initialization
+    
     void Start ()
     {
         enemyWavesManager = FindObjectOfType<EnemyWavesManager>();
@@ -27,7 +27,7 @@ public class Attacker : MonoBehaviour
         gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
 	}
 	
-	// Update is called once per frame
+	
 	void Update () {
         transform.Translate(Vector3.left * movementSpeed * Time.deltaTime);
 

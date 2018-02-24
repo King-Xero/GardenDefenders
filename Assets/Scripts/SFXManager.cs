@@ -8,6 +8,8 @@ public class SFXManager : MonoBehaviour {
     public AudioClip DefenderPlaced;
     public AudioClip DefenderRemoved;
     public AudioClip LevelEnd;
+    public AudioClip StarCollected;
+    public AudioClip WaveStarted;
 
     private AudioSource audioSource;
 
@@ -17,12 +19,12 @@ public class SFXManager : MonoBehaviour {
         Debug.Log("Don't destroy on load: " + name);
     }
 
-	// Use this for initialization
+	
 	void Start () {
         audioSource = GetComponent<AudioSource>();
 	}
 	
-	// Update is called once per frame
+	
 	void Update () {
 		
 	}

@@ -12,7 +12,7 @@ public class LanguageSelector : MonoBehaviour {
 
     private Image flagIcon;
 
-	// Use this for initialization
+	
 	void Start () {
         languageFileMap = GetComponent<LanguageFileMap>();
 
@@ -35,7 +35,7 @@ public class LanguageSelector : MonoBehaviour {
         }
     }
 
-    // Update is called once per frame
+    
     void Update () {
 		
 	}

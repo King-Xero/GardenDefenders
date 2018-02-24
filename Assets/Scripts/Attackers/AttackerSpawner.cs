@@ -10,13 +10,13 @@ public class AttackerSpawner : MonoBehaviour
     //public GameObject[] AttackerPrefabs;
     public GameObject[] AttackerPools;
 
-    // Use this for initialization
+    
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         if (Time.timeSinceLevelLoad >= SpawnDelay)

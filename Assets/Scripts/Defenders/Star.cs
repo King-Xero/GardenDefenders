@@ -9,9 +9,12 @@ public class Star : MonoBehaviour {
 
     private StarsCounter starsCounter;
     private Animator animator;
+    private SFXManager sfxManager;
 
-	// Use this for initialization
-	void Start () {
+    
+    void Start ()
+    {
+        sfxManager = FindObjectOfType<SFXManager>();
         starsCounter = FindObjectOfType<StarsCounter>();
         if (!starsCounter)
         {
@@ -31,7 +34,7 @@ public class Star : MonoBehaviour {
         }
     }
 
-    // Update is called once per frame
+    
     void Update () {
 		
 	}
@@ -42,6 +45,10 @@ public class Star : MonoBehaviour {
         if (starsCounter)
         {
             starsCounter.AddStars(StarsAmount);
+            if (sfxManager)
+            {
+                sfxManager.PlayClip(sfxManager.StarCollected);
+            }
         }
         animator.SetTrigger("collectedTrigger");
     }

@@ -12,7 +12,7 @@ public class Health : MonoBehaviour
 
     private float hp;
 
-    // Use this for initialization
+    
     void Start()
     {
         hp = HealthPoints;
@@ -20,7 +20,7 @@ public class Health : MonoBehaviour
         attackerComponent = GetComponent<Attacker>();
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
     }

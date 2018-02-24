@@ -7,13 +7,13 @@ public class MagicRock : MonoBehaviour {
     private Animator anim;
     private GameObject currentTarget;
 
-    // Use this for initialization
+    
     void Start()
     {
         anim = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         if (!currentTarget || !currentTarget.activeInHierarchy)

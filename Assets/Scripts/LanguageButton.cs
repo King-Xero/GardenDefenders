@@ -15,7 +15,7 @@ public class LanguageButton : MonoBehaviour
         levelSceneManager = FindObjectOfType<LevelSceneManager>();
     }
 	
-	// Update is called once per frame
+	
 	void Update () {
 		
 	}

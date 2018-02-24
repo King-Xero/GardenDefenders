@@ -12,7 +12,7 @@ public class OptionsController : MonoBehaviour
     private MusicManager musicManager;
     private SFXManager sfxManager;
 
-    // Use this for initialization
+    
     void Start()
     {
         musicManager = FindObjectOfType<MusicManager>();
@@ -22,7 +22,7 @@ public class OptionsController : MonoBehaviour
         SfxVolumeSlider.value = PlayerPrefsManager.GetSFXVolume();
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         if (musicManager)
