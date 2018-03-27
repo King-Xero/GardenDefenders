@@ -5,24 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class LoseCollider : MonoBehaviour
 {
-    private LevelSceneManager levelManager;
-
+    public UIOverlayManager UIOverlay;
     
-    void Start()
-    {
-        levelManager = FindObjectOfType<LevelSceneManager>();
-    }
-
-    
-    void Update()
-    {
-    }
-
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.GetComponent<Attacker>())
         {
-            levelManager.LoadLoseScene();
+            //Disable game functionality
+            Debug.Log("Level Failed");
+            UIOverlay.ShowPanel(LevelEndCondition.LevelFailed);
         }
     }
 }

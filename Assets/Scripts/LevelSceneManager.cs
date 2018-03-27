@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelSceneManager : MonoBehaviour
 {
-    public static bool GameIsPaused;
+    public static bool GameIsPaused, GameIsActive;
 
     public bool AutoLoadNextlevel;
     public float AutoLoadAfter;
@@ -28,12 +28,24 @@ public class LevelSceneManager : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        if (!GameIsActive)
+        {
+            Time.timeScale = 0.0f;
+        }
+    }
+
     public void LoadScene(int scene)
     {
         if (GameIsPaused)
         {
             GameIsPaused = false;
             Time.timeScale = 1.0f;
+        }
+        if (!GameIsActive)
+        {
+            GameIsActive = true;
         }
 
         SceneManager.LoadScene(scene);

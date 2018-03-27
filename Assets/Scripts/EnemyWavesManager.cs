@@ -11,21 +11,15 @@ public class EnemyWavesManager : MonoBehaviour
     //Higher the number, slower the spawn rate
     //ToDo Use this number to create difficulty settings
     private const int NUMBER_OF_LANES = 1; //5;
-    private const float POPUP_DISPLAY_TIME = 3f;
-    private const float WAVE_SPAWN_DELAY = 4f;
+    private const float WAVE_SPAWN_DELAY = 0f;
 
     private int numTotalWaves, numEnemiesInWave, numTotalEnemiesInLevel, numCurrentWave, numCurrentLevel;
     private Level currentLevel;
     private Wave currentWave;
     private Dictionary<GameObject, int> currentWaveDictionary;
     private WaveSlider waveSlider;
-    private LevelSceneManager levelSceneManager;
-    private SFXManager sfxManager;
     
-    public string WaveKey;
-    public PopUpText WaveMessage;
-    public GameObject LevelCompletePanel;
-    public GameObject LevelFailedPanel;
+    public UIOverlayManager UIOverlay;
     public List<GameObject> SpawnPoints;
     public List<ObjectPooler> EnemyPools;
     
@@ -45,8 +39,6 @@ public class EnemyWavesManager : MonoBehaviour
 	    numEnemiesInWave = 0;
 	    
 	    waveSlider = FindObjectOfType<WaveSlider>();
-	    levelSceneManager = FindObjectOfType<LevelSceneManager>();
-	    sfxManager = FindObjectOfType<SFXManager>();
 
         SetupLevelObjectPools();
 	}
@@ -149,7 +141,7 @@ public class EnemyWavesManager : MonoBehaviour
     {
         Attacker attacker = enemyGameObject.GetComponent<Attacker>();
 
-        if (!attacker)
+        if (attacker == null)
         {
             return false;
         }
@@ -178,38 +170,19 @@ public class EnemyWavesManager : MonoBehaviour
 
     void LevelComplete()
     {
+        //ToDo Disable normal functionality
         //PlayerPrefsManager.CompleteLevel(numCurrentLevel);
         //PlayerPrefsManager.UnlockLevel(numCurrentLevel + 1);
         Debug.Log("Level Finished");
-        if (LevelCompletePanel)
-        {
-            LevelCompletePanel.SetActive(true);
-        }
-        if (sfxManager)
-        {
-            sfxManager.PlayClip(sfxManager.LevelEnd);
-        }
-    }
-
-    void ShowWaveMessage()
-    {
-        sfxManager.PlayClip(sfxManager.WaveStarted);
-        WaveMessage.Text = LocalizationManager.Instance.GetLocalizedValue(WaveKey)+ ": " + numCurrentWave;
-        WaveMessage.DisplayText(POPUP_DISPLAY_TIME);
+        UIOverlay.ShowPanel(LevelEndCondition.LevelComplete, numCurrentLevel);
     }
 
     void StartNextWave()
     {
-        ShowWaveMessage();
+        UIOverlay.ShowWaveMessage(numCurrentWave);
         SpawnWave();
     }
-
-    public void StartNextLevel()
-    {
-        PlayerPrefsManager.SetSelectedLevel(numCurrentLevel + 1);
-        levelSceneManager.LoadGameScene();
-    }
-
+    
     public int GetCurrentWave()
     {
         return numCurrentWave;

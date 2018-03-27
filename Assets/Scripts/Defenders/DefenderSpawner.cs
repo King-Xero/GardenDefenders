@@ -33,7 +33,7 @@ public class DefenderSpawner : MonoBehaviour
     private void OnMouseDown()
     {
         Debug.Log("Attempting to spawn a defender");
-        if (!LevelSceneManager.GameIsPaused && !DefenderButton.ShovelActive &&
+        if (LevelSceneManager.GameIsActive && !LevelSceneManager.GameIsPaused && !DefenderButton.ShovelActive &&
             DefenderButton.SelectedDefenderPrefabs != null && DefenderButton.SelectedDefenderPrefabs.Any())
         {
             Defender selectedDefender = DefenderButton.SelectedDefenderPrefabs.ElementAt(Mathf.RoundToInt(Random.Range(0, DefenderButton.SelectedDefenderPrefabs.Count()))).GetComponent<Defender>();

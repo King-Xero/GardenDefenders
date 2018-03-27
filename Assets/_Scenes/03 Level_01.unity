@@ -376,6 +376,30 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224586990911514380, guid: 45d5afd28b73587479d225ed24a2f8da,
     type: 2}
   m_PrefabInternal: {fileID: 88846000}
+--- !u!1 &88846002 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1196322256388528, guid: 45d5afd28b73587479d225ed24a2f8da,
+    type: 2}
+  m_PrefabInternal: {fileID: 88846000}
+--- !u!114 &88846003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 88846002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91df10956f83b654097f37bade470522, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WaveMessage: {fileID: 286142077}
+  WaveKey: wave
+  LevelEndPanelText: {fileID: 497152002}
+  CompleteKey: levelcomplete
+  FailKey: levelfail
+  LevelEndPanel: {fileID: 174527849}
+  NextLevelButton: {fileID: 2122834355}
+  RetryButton: {fileID: 1490406452}
 --- !u!1 &174527849 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1172971811791042, guid: dc050080b7e9e7c4f9912170e97ca25d,
@@ -575,15 +599,20 @@ Prefab:
       propertyPath: LevelCompletePanel
       value: 
       objectReference: {fileID: 174527849}
+    - target: {fileID: 114993150339859968, guid: 99cb2af9f6372074f988925e5549ae05,
+        type: 2}
+      propertyPath: UIOverlay
+      value: 
+      objectReference: {fileID: 88846003}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 99cb2af9f6372074f988925e5549ae05, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &478254740 stripped
+--- !u!114 &497152002 stripped
 MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114993150339859968, guid: 99cb2af9f6372074f988925e5549ae05,
+  m_PrefabParentObject: {fileID: 114167679396033452, guid: dc050080b7e9e7c4f9912170e97ca25d,
     type: 2}
-  m_PrefabInternal: {fileID: 478254739}
-  m_Script: {fileID: 11500000, guid: 3813458d38ba4994692d0babe847d926, type: 3}
+  m_PrefabInternal: {fileID: 2122834354}
+  m_Script: {fileID: 11500000, guid: f6b2df9bf08104242b65befa947e2866, type: 3}
 --- !u!1001 &905681519
 Prefab:
   m_ObjectHideFlags: 0
@@ -712,6 +741,11 @@ Prefab:
       propertyPath: LoseScene
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 114841579716991944, guid: c0e1d46cd51392547931ef6f9973a45e,
+        type: 2}
+      propertyPath: UIOverlay
+      value: 
+      objectReference: {fileID: 88846003}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c0e1d46cd51392547931ef6f9973a45e, type: 2}
   m_IsPrefabParent: 0
@@ -807,6 +841,11 @@ GameObject:
   m_PrefabParentObject: {fileID: 1788286265730882, guid: 0d9007f122560f845af24de862896239,
     type: 2}
   m_PrefabInternal: {fileID: 1398566421}
+--- !u!1 &1490406452 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1816511544930614, guid: dc050080b7e9e7c4f9912170e97ca25d,
+    type: 2}
+  m_PrefabInternal: {fileID: 2122834354}
 --- !u!1001 &1528313593
 Prefab:
   m_ObjectHideFlags: 0
@@ -1405,14 +1444,24 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 478254740}
+      objectReference: {fileID: 88846003}
+    - target: {fileID: 114062751321640306, guid: dc050080b7e9e7c4f9912170e97ca25d,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 88846003}
     - target: {fileID: 1172971811791042, guid: dc050080b7e9e7c4f9912170e97ca25d, type: 2}
-      propertyPath: m_IsActive
-      value: 0
+      propertyPath: m_Name
+      value: LevelEndPanel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dc050080b7e9e7c4f9912170e97ca25d, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &2122834355 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1257667459233416, guid: dc050080b7e9e7c4f9912170e97ca25d,
+    type: 2}
+  m_PrefabInternal: {fileID: 2122834354}
 --- !u!1001 &2142104773
 Prefab:
   m_ObjectHideFlags: 0

@@ -68,7 +68,7 @@ public class DefenderButton : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (!LevelSceneManager.GameIsPaused)
+        if (LevelSceneManager.GameIsActive && !LevelSceneManager.GameIsPaused)
         {
             foreach (DefenderButton defenderButton in defenderButtons)
             {
