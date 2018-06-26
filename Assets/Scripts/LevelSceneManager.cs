@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class LevelSceneManager : MonoBehaviour
 {
-    public static bool GameIsPaused, GameIsActive;
+    public static bool GameIsPaused;
+    public static bool GameIsActive = true;
 
     public bool AutoLoadNextlevel;
     public float AutoLoadAfter;
