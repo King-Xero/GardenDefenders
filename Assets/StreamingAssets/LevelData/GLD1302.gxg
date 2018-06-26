@@ -1,1 +1,1 @@
-{"Levels":[{"Name":"Level 1","Waves":[{"Name":"Wave 1","WaveEnemies":[{"Name":"Enemy 1","EnemyPrefab":{"instanceID":11616},"Spawns":1}]}]}]}
+{"Levels":[{"Name":"Level 1","Waves":[{"Name":"Wave 1","WaveEnemies":[{"Name":"Enemy 1","EnemyPrefab":{"instanceID":15600},"Spawns":15},{"Name":"Enemy 2","EnemyPrefab":{"instanceID":18876},"Spawns":15}]}]}]}

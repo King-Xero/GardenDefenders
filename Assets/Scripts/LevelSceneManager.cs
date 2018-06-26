@@ -42,12 +42,12 @@ public class LevelSceneManager : MonoBehaviour
         if (GameIsPaused)
         {
             GameIsPaused = false;
-            Time.timeScale = 1.0f;
         }
         if (!GameIsActive)
         {
             GameIsActive = true;
         }
+        Time.timeScale = 1.0f;
 
         SceneManager.LoadScene(scene);
     }
