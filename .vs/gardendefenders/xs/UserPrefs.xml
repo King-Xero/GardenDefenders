@@ -1,0 +1,20 @@
+﻿<Properties StartupConfiguration="{49F2C47B-A375-631C-F0BB-A86485FEA902}|">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/LevelSceneManager.cs">
+    <Files>
+      <File FileName="Assets/Scripts/SFXManager.cs" Line="10" Column="22" />
+      <File FileName="Assets/Scripts/UIOverlayManager.cs" Line="65" Column="45" />
+      <File FileName="Assets/Scripts/OptionsController.cs" Line="38" Column="5" />
+      <File FileName="Assets/Scripts/InGameMenu.cs" Line="26" Column="46" />
+      <File FileName="Assets/_Editor/LevelEditor.cs" Line="83" Column="90" />
+      <File FileName="Assets/Scripts/LevelSceneManager.cs" Line="87" Column="9" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.gardendefenders PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

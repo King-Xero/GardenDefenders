@@ -1,10 +1,15 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Application
+public class QuitMenuController : MonoBehaviour
 {
-    public class QuitMenuController : MonoBehaviour
+    public void ShowQuitMenu()
     {
+        gameObject.SetActive(true);
+    }
 
+    public void CloseQuitMenu()
+    {
+        gameObject.SetActive(false);
     }
 }

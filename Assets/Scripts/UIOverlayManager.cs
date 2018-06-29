@@ -58,12 +58,12 @@ public class UIOverlayManager : MonoBehaviour
                 {
                     NextLevelButton.SetActive(true);
                 }
-                sfxManager.PlayClip(sfxManager.LevelEnd);
+                sfxManager.PlayClip(sfxManager.LevelComplete);
                 break;
             case LevelEndCondition.LevelFailed:
                 LevelEndPanelText.key = FailKey;
                 RetryButton.SetActive(true);
-                //sfxManager.PlayClip(sfxManager.LevelEnd);
+                sfxManager.PlayClip(sfxManager.LevelFailed);
                 break;
         }
         LevelEndPanel.SetActive(true);

@@ -7,7 +7,8 @@ public class SFXManager : MonoBehaviour {
 
     public AudioClip DefenderPlaced;
     public AudioClip DefenderRemoved;
-    public AudioClip LevelEnd;
+    public AudioClip LevelComplete;
+    public AudioClip LevelFailed;
     public AudioClip StarCollected;
     public AudioClip WaveStarted;
 
